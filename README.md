@@ -1,60 +1,139 @@
-# Hepatitis C Virus (HCV) Prediction for Egyptian Patients
+# Hepatitis C Virus (HCV) Analysis for Egyptian Patients
 
 ---
 
-## 1. **Project Overview**
+## 1. Project Overview
 
-Hepatitis C Virus (HCV) is a major public health challenge, particularly in Egypt, which historically faced one of the highest prevalence rates globally. Early diagnosis and classification of liver fibrosis progression are critical for effective healthcare intervention.
+This project focuses on analyzing a dataset related to Hepatitis C Virus (HCV) among Egyptian patients. The main goal is to explore patient characteristics and understand how different clinical and demographic variables are associated with HCV outcomes.
 
-This project analyzes clinical and laboratory test results of Egyptian patients to build a complete **data analytics pipeline** and an **interactive Power BI dashboard** aimed at analyzing risk factors and predicting HCV progression stages.
-
-**Tools Used:**
-* **R (tidyverse, caret, ggplot2)** – Data cleaning, handling missing values, statistical analysis, and machine learning pipeline
-* **Excel** – Initial exploration and patient attribute validation
-* **Power BI** – Data modeling, DAX analytics, and clinical performance dashboarding
+The analysis is based on structured medical data and aims to extract meaningful patterns that can support better understanding of disease distribution and patient classification.
 
 ---
 
-## 2. **Project Objective**
+## 2. Project Objective
 
-The main goal is to build a **data-driven healthcare analytics system** that enables medical professionals, analysts, and stakeholders to:
-* Monitor **patient demographics and risk distribution** across categories
-* Analyze the correlation between **biochemical markers** (ALT, AST, Albumin, etc.) and HCV severity
-* Evaluate and predict the progression of **liver fibrosis stages** (F0 to F4)
-* Provide medical stakeholders with an **interactive exploratory view** of clinical laboratory results
+The main objectives of this project are:
 
----
-
-## 3. **Key Stakeholders**
-
-The system is designed for:
-* **Medical Specialists & Hepatologists** – Track patient risk markers and treatment urgency
-* **Healthcare Operations Teams** – Evaluate clinical asset and medical resource allocation
-* **Public Health Analysts** – Monitor epidemiology trends and demographic vulnerability factors
+* Explore the structure of HCV patient data
+* Understand relationships between patient attributes
+* Analyze distribution of clinical variables
+* Identify patterns related to infection and patient condition
+* Support medical data interpretation using statistical analysis
 
 ---
 
-## 4. **Key Performance Indicators (KPIs)**
+## 3. Key Stakeholders
 
-The dashboard calculates and tracks:
-* **Total Patients Evaluated**
-* **Fibrosis Distribution Rate** (Percentage of Advanced Fibrosis - F3/F4)
-* **Average AST/ALT Ratio** (Critical indicator of liver damage)
-* **High-Risk Patient Count** (Based on critical biomarker critical thresholds)
-* **Average RNA Load** (Viral viral activity tracking)
+This analysis is relevant for:
+
+* Medical researchers
+* Healthcare data analysts
+* Epidemiology students
+* Public health professionals
+* Academic researchers in medical data science
 
 ---
 
-## 5. **System Architecture**
+## 4. Dataset Description
 
-The project follows a **multi-layer analytics pipeline**:
+The dataset includes patient-level information such as:
 
-```mermaid
+* Demographic attributes (e.g., age, gender)
+* Clinical measurements
+* Laboratory test results
+* Medical condition indicators related to HCV
+
+---
+
+## 5. System Workflow
+
+```mermaid id="hcv_flow_2026"
 flowchart LR
-    A[Raw Patient CSV Data] --> B[R Scripts Analysis]
-    B --> C[Biomarker Discretization & Cleaning]
-    C --> D[Processed Star-Schema Datasets]
-    D --> E[Power BI Data Model]
-    E --> F[DAX Clinical Measures]
-    F --> G[Interactive Patient Dashboard]
-    G --> H[Medical Insights]
+A[Raw HCV Dataset] --> B[Data Exploration]
+B --> C[Data Cleaning (if applicable)]
+C --> D[Statistical Analysis]
+D --> E[Pattern Identification]
+E --> F[Insights & Interpretation]
+```
+
+---
+
+## 6. System Analysis
+
+### 6.1 Input Data
+
+The input consists of structured patient data containing:
+
+* Patient demographic information
+* Clinical test results
+* Health condition indicators
+* HCV-related medical attributes
+
+---
+
+### 6.2 Processing Steps
+
+The analysis includes:
+
+* Understanding dataset structure
+* Checking data consistency
+* Exploring variable distributions
+* Performing statistical comparisons
+* Extracting insights from relationships between variables
+
+---
+
+### 6.3 Output Results
+
+The project generates:
+
+* Summary statistics of patient data
+* Visual or numerical insights (if included in notebook)
+* Observations about variable relationships
+* Data-driven conclusions about HCV patterns
+
+---
+
+## 7. Analytical Approach
+
+The project follows an exploratory data analysis (EDA) approach:
+
+* Studying each variable individually
+* Comparing relationships between variables
+* Identifying patterns in patient conditions
+* Summarizing findings in a structured way
+
+---
+
+## 8. Key Insights
+
+The analysis helps to:
+
+* Understand distribution of HCV cases among patients
+* Identify trends in clinical measurements
+* Explore relationships between demographic and medical variables
+* Support better interpretation of medical datasets
+
+---
+
+## 9. Repository Structure
+
+```text id="hcv_repo_structure_2026"
+Hepatitis-C-Virus-HCV-for-Egyptian-patients
+
+data/
+    dataset file(s)
+
+notebooks/
+    analysis notebook (if available)
+
+README.md
+```
+
+---
+
+## 10. Conclusion
+
+This project provides a structured exploratory analysis of Hepatitis C patient data in Egypt. It focuses on understanding the dataset, identifying patterns, and generating insights that may support further medical or statistical research.
+
+---
