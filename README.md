@@ -4,9 +4,11 @@
 
 ## 1. Project Overview
 
-This project focuses on analyzing a dataset related to Hepatitis C Virus (HCV) among Egyptian patients. The main goal is to explore patient characteristics and understand how different clinical and demographic variables are associated with HCV outcomes.
+This project focuses on analyzing a dataset related to Hepatitis C Virus (HCV) among Egyptian patients.
 
-The analysis is based on structured medical data and aims to extract meaningful patterns that can support better understanding of disease distribution and patient classification.
+The main goal is to explore patient characteristics and understand how different clinical and demographic variables are associated with HCV outcomes.
+
+The analysis is based on structured medical data and aims to extract meaningful patterns that support better understanding of disease distribution and patient classification.
 
 ---
 
@@ -47,10 +49,10 @@ The dataset includes patient-level information such as:
 
 ## 5. System Workflow
 
-```mermaid id="hcv_flow_2026"
+```mermaid
 flowchart LR
 A[Raw HCV Dataset] --> B[Data Exploration]
-B --> C[Data Cleaning (if applicable)]
+B --> C[Data Cleaning]
 C --> D[Statistical Analysis]
 D --> E[Pattern Identification]
 E --> F[Insights & Interpretation]
@@ -118,14 +120,14 @@ The analysis helps to:
 
 ## 9. Repository Structure
 
-```text id="hcv_repo_structure_2026"
+```text
 Hepatitis-C-Virus-HCV-for-Egyptian-patients
 
 data/
-    dataset file(s)
+    dataset files
 
 notebooks/
-    analysis notebook (if available)
+    analysis notebook
 
 README.md
 ```
